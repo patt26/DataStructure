@@ -12,9 +12,10 @@ namespace DataStructure
         {
             var linkedList = new LinkedList();
             linkedList.Add(56);
-            linkedList.Add(30);
+            //linkedList.Add(30);
             linkedList.Add(70);
-           // linkedList.Display();
+            linkedList.Display();
+            linkedList.InsertAtPerticularPosition(2, 30);
 
 
 

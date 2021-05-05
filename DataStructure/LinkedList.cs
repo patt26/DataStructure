@@ -57,5 +57,35 @@ namespace DataStructure
             }
             Console.WriteLine();
         }
+        internal Node InsertAtPerticularPosition(int position,int data)
+        {
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Position");
+            }
+            if (position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                while (position == 1)
+                {
+                    Node node = new Node(data);
+                    node.next = this.head.next;
+                    head.next = node;
+                    break;
+                }
+                head = head.next;
+            }
+            if (position != 1)
+            {
+                Console.WriteLine("Position out of range");
+            }
+            Console.WriteLine("Inserted value is : " + head);
+            return head;
+        }
     }
 }
