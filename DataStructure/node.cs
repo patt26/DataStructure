@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    class node
+    class Node
     {
-
+        public int data;
+        public Node next;
+        public Node(int data)
+        {
+            this.data = data;
+        }
     }
 }
