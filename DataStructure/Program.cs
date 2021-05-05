@@ -16,11 +16,7 @@ namespace DataStructure
             linkedList.Add(70);
             linkedList.Display();
            // linkedList.InsertAtPerticularPosition(2, 30);
-            linkedList.RemoveFirstNode();
-            
-
-
-
+           // linkedList.RemoveFirstNode();
             Console.ReadKey();
         }
     }
