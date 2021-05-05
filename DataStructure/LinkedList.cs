@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    class node
+    class LinkedList
     {
-
     }
 }
